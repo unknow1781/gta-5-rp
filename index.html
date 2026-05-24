@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Legacy RolePlay</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<a href="./index.html" class="logo">
+
+  <img src="./photo/LegacyRpNewLogo.png" alt="Logo" class="logo-img">
+
+<div class="hero-title">
+
+  <span class="legacy-text">LEGACY</span>
+
+  <span class="rp-text">ROLEPLAY</span>
+
+</div>
+</a>
+  <nav class="navbar">
+    <a href="./index.html" class="active">მთავარი</a>
+    <a href="./About.html">ინფორმაცია</a>
+    <a href="./Contact.html">ფორუმი</a>
+  </nav>
+
+<div class="actions">
+  <div class="server-status">
+    <div class="status-dot" id="status-dot"></div>
+    <span id="server-text">იტვირთება...</span>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<script>
+  async function fetchServerStatus() {
+    const statusDot = document.getElementById('status-dot');
+    const serverText = document.getElementById('server-text');
+
+    try {
+      const response = await fetch('http://26.197.31.1:22005/players', {
+        signal: AbortSignal.timeout(5000)
+      });
+
+      if (!response.ok) throw new Error('offline');
+
+      const data = await response.json();
+      const online = Array.isArray(data) ? data.length : (data.count ?? '?');
+
+      statusDot.style.background = '#00ff88';
+      serverText.textContent = `ონლაინი: ${online} მოთამაშე`;
+
+    } catch (err) {
+      statusDot.style.background = '#ff4444';
+      serverText.textContent = 'ოფლაინი';
+    }
+  }
+
+  fetchServerStatus();
+  setInterval(fetchServerStatus, 30000); 
+</script>
+
+
+</div>
+
+</header>
+
+<div class="popup" id="popup">
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-wrapper">
+
+        <div class="popup-character">
+            <img src="./photo/GangMember.png" alt="">
+        </div>
+
+        <div class="popup-box">
+
+            <div class="popup-glow"></div>
+
+            <div class="popup-header">
+
+                <div class="popup-badge">
+                    <span class="badge-dot"></span>
+                    LEGACY ROLEPLAY
+                </div>
+
+                <h1>
+                    კეთილი იყოს თქვენი<br>
+                    მობრძანება Legacy RP-ზე
+                </h1>
+
+                <p>
+                    რეალისტური ქართული GTA V RolePlay გამოცდილება
+                    თანამედროვე სისტემებით და მაღალი ხარისხის გარემოთი.
+                </p>
+
+            </div>
+
+            <div class="popup-body">
+
+                <div class="popup-question">
+                    უკვე იცი როგორ შემოხვიდე Legacy RolePlay-ზე?
+                </div>
+
+                <div class="popup-buttons">
+
+                    <button class="popup-btn primary-btn" onclick="enterSite()">
+                        <span>დიახ, ვიცი</span>
+                    </button>
+
+                    <button class="popup-btn secondary-btn" onclick="openTutorial()">
+                        <span>არა — როგორ შემოვიდე?</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  </section>
+
+<div class="scroll-indicator left-scroll">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div class="scroll-indicator right-scroll">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<section class="main-home">
+
+</section>
+<h1 class="bre"></h1>
+  <script src="./app.js"></script>
+ 
+
+<section class="faq-section">
+
+    <div class="faq-top">
+        <span class="faq-sub">LEGACY ROLEPLAY</span>
+        <h1>ხშირად დასმული კითხვები</h1>
+        <p>
+            ყველაფერი რაც უნდა იცოდე <span>Legacy RP</span>-ის შესახებ
+        </p>
+    </div>
+
+    <div class="faq-grid">
+
+        <div class="faq-card">
+            <h3>რა არის Legacy RP?</h3>
+            <p>
+                <span>Legacy RP</span> არის ქართული GTA V RolePlay სერვერი,
+                სადაც მოთამაშეები ქმნიან უნიკალურ ისტორიებს,
+                ურთიერთობებს და რეალისტურ RolePlay გამოცდილებას.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>როგორ შემოვიდე სერვერზე?</h3>
+            <p>
+                შემოსასვლელად საჭიროა RageMP, ოფიციალური GTA V
+                და ჩვენი <span>Discord</span> საზოგადოების წევრობა.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>აქვს თუ არა whitelist?</h3>
+            <p>
+                არა, <span>Legacy RP</span>-ზე არ გვაქვს whitelist რადგან ყველამ შეძლოს თამაში
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>შეიძლება ფრაქციაში გაწევრიანება?</h3>
+            <p>
+                მოთამაშეებს შეუძლიათ შეუერთდნენ პოლიციას,
+                EMS-ს, ბანდებს და სხვა ოფიციალურ ორგანიზაციებს.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>არის თუ არა ქართული Voice Chat?</h3>
+            <p>
+                დიახ, სერვერზე კომუნიკაცია ძირითადად ქართულ ენაზე მიმდინარეობს,
+                რაც RolePlay-ს უფრო რეალისტურს ხდის.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>რატომ უნდა ავირჩიო Legacy RP?</h3>
+            <p>
+                თანამედროვე სისტემა, აქტიური ადმინისტრაცია,
+                დაცული ეკონომიკა და მაღალი ხარისხის ქართული RP გარემო.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="site-footer">
+ 
+  <div class="ft-divider">
+    <div class="ft-line"></div>
+    <span class="ft-title">შემოგვიერთდი</span>
+    <div class="ft-line"></div>
+  </div>
+ 
+  <div class="ft-grid">
+ 
+    <div class="ft-card">
+      <div class="ft-card-top">
+        <div class="ft-icon" style="background:#5865F2;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"/>
+          </svg>
+        </div>
+        <div class="ft-meta">
+          <span class="ft-sub">ოფიციალური არხი</span>
+          <span class="ft-name">Discord</span>
+        </div>
+      </div>
+
+      <a href="https://discord.gg/FBgQDQxsaq" class="ft-btn">დაჯოინდი</a>
+    </div>
+ 
+    <div class="ft-card">
+      <div class="ft-card-top">
+        <div class="ft-icon" style="background:#FF0000;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </div>
+        <div class="ft-meta">
+          <span class="ft-sub">ოფიციალური არხი</span>
+          <span class="ft-name">YouTube</span>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/@geo-life1" class="ft-btn">გამოწერა</a>
+    </div>
+ 
+    <div class="ft-card">
+      <div class="ft-card-top">
+        <div class="ft-icon" style="background:#111; border:1px solid #2a2a2a;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.02a8.27 8.27 0 0 0 4.84 1.55V7.12a4.85 4.85 0 0 1-1.07-.43z"/>
+          </svg>
+        </div>
+        <div class="ft-meta">
+          <span class="ft-sub">ოფიციალური TikTok</span>
+          <span class="ft-name">TikTok</span>
+        </div>
+      </div>
+     
+      <a href="https://www.tiktok.com/@legacyrpgeo?is_from_webapp=1&sender_device=pc" class="ft-btn">გამოწერა</a>
+    </div>
+ 
+  </div>
+ 
+ 
+</section>
+
+<footer class="custom-footer">
+
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="./photo/LegacyRpNewLogo.png" alt="Legacy RolePlay">
+    </div>
+
+    <div class="footer-links">
+
+      <div class="footer-column">
+        <h3>ნავიგაცია</h3>
+
+        <a href="./index.html">მთავარი</a>
+        <a href="./About.html">ინფორმაცია</a>
+        <a href="./Contact.html">ფორუმი</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>ინფორმაცია</h3>
+        <a href="./userargement.html">User Agreement</a>
+
+        <a href="./policy.html">privacy policy</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>კონტაქტი</h3>
+
+        <a href="https://discord.gg/FBgQDQxsaq">Discord</a>
+        <a href="https://www.tiktok.com/@legacyrpgeo?is_from_webapp=1&sender_device=pc">TikTok</a>
+        <a href="https://www.youtube.com/@geo-life1">YouTube</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+
+    <div class="footer-bottom-center">
+      <p>
+        Legacy RolePlay არ არის დაკავშირებული Rockstar Games,
+        Take-Two Interactive ან RageMP-სთან.
+        ყველა უფლება დაცულია © 2026
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
