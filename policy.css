@@ -3,19 +3,25 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+        font-family:'MyFont',sans-serif;
+
     
 html,body{
     overflow-x:hidden;
     background:#071018;
 }
+@font-face{
+    font-family:'MyFont';
+    src:url('./font/bpg_nino_mtavruli_bold.ttf') format('truetype');
+}
+
 }
 .header{
     width:90%;
     max-width:1100px;
     height:72px;
 
-    position:fixed;
+    position:absolute;
     top:24px;
     left:50%;
     transform:translateX(-50%);
@@ -235,6 +241,8 @@ html,body{
 .site-footer{
     margin-top:0;
     padding-top:60px;
+        padding-bottom: 10px;
+
     background-color:#071018 ;
     border-top:none;
     z-index: 99;
