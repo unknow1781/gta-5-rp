@@ -514,3 +514,300 @@ justify-content: center;
     line-height:1.8;
 }
 
+
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+/* =========================
+   LAPTOP / TABLET
+========================= */
+@media (max-width: 1200px){
+
+    .header{
+        width:95%;
+        padding:0 20px;
+    }
+
+    .footer-top{
+        gap:70px;
+    }
+
+    .footer-links{
+        gap:60px;
+    }
+
+    .faq-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .ua-block h2{
+        font-size:34px;
+    }
+
+    .user-agreement h1{
+        font-size:52px;
+    }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px){
+
+    .header{
+        height:auto;
+        padding:18px;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .navbar{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .actions{
+        width:100%;
+        justify-content:center;
+    }
+
+    .logo{
+        width:100%;
+        justify-content:center;
+    }
+
+    .logo-img{
+        width:60px;
+        height:60px;
+    }
+
+    .legacy-text{
+        font-size:22px;
+        letter-spacing:3px;
+    }
+
+    .rp-text{
+        font-size:12px;
+        letter-spacing:5px;
+    }
+
+    .user-agreement{
+        padding:180px 25px 80px;
+    }
+
+    .user-agreement h1{
+        font-size:42px;
+        margin-bottom:45px;
+    }
+
+    .ua-block h2{
+        font-size:28px;
+    }
+
+    .ua-block p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ft-grid{
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+    .footer-top{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+    .footer-links{
+        justify-content:center;
+        gap:50px;
+    }
+
+    .footer-column{
+        align-items:center;
+    }
+
+    .footer-logo img{
+        width:180px;
+    }
+
+    .footer-bottom{
+        justify-content:center;
+        text-align:center;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px){
+
+    .header{
+        top:12px;
+        border-radius:14px;
+        padding:15px;
+    }
+
+    .navbar{
+        gap:8px;
+    }
+
+    .navbar a{
+        font-size:12px;
+        padding:8px 10px;
+    }
+
+    .server-status{
+        font-size:10px;
+        padding:5px 10px;
+    }
+
+    .logo{
+        gap:10px;
+    }
+
+    .logo-img{
+        width:52px;
+        height:52px;
+    }
+
+    .legacy-text{
+        font-size:18px;
+        letter-spacing:2px;
+    }
+
+    .rp-text{
+        font-size:10px;
+        letter-spacing:4px;
+    }
+
+    .user-agreement{
+        padding:210px 18px 60px;
+    }
+
+    .user-agreement h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .ua-block{
+        margin-bottom:40px;
+    }
+
+    .ua-block h2{
+        font-size:22px;
+        line-height:1.4;
+    }
+
+    .ua-block p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .ua-date{
+        font-size:14px;
+    }
+
+    .ft-divider{
+        gap:10px;
+        margin-bottom:30px;
+    }
+
+    .ft-title{
+        font-size:10px;
+        letter-spacing:2px;
+    }
+
+    .ft-card{
+        padding:18px;
+    }
+
+    .ft-card-top{
+        gap:10px;
+    }
+
+    .ft-name{
+        font-size:13px;
+    }
+
+    .ft-btn{
+        font-size:11px;
+        padding:10px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .footer-column h3{
+        font-size:18px;
+    }
+
+    .footer-column a{
+        font-size:14px;
+    }
+
+    .footer-bottom{
+        margin-top:40px;
+        padding-top:20px;
+    }
+
+    .footer-bottom-center p{
+        font-size:12px;
+        line-height:1.7;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL DEVICES
+========================= */
+@media (max-width: 400px){
+
+    .legacy-text{
+        font-size:16px;
+    }
+
+    .rp-text{
+        font-size:9px;
+    }
+
+    .navbar a{
+        font-size:11px;
+        padding:6px 8px;
+    }
+
+    .user-agreement h1{
+        font-size:26px;
+    }
+
+    .ua-block h2{
+        font-size:19px;
+    }
+
+    .ua-block p{
+        font-size:14px;
+    }
+
+    .footer-logo img{
+        width:140px;
+    }
+
+}
