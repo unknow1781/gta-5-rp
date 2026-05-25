@@ -264,7 +264,7 @@ html,body{
 }
 
 .ft-title{
-    font-size:11px;
+    font-size:15px;
     letter-spacing:4px;
     color:#ff003c;
 }
@@ -483,7 +483,7 @@ justify-content: center;
     z-index:2;
 
     margin-top:70px;
-    padding-top:30px;
+    padding-top:20px;
 
     border-top:1px solid rgba(255,255,255,0.08);
 
@@ -517,6 +517,7 @@ justify-content: center;
 
 .footer-bottom-center p{
     color:rgba(248, 246, 246, 0.28);
+    padding-bottom: 15px;
 
     font-size:14px;
     line-height:1.8;

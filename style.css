@@ -688,92 +688,6 @@ body{
     font-weight: 700;
 }
 
-.site-footer {
-    margin-top: 0;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    background-color: #0D0D0D;
-    border-top: none;
-}
-
-.ft-divider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 48px;
-}
-
-.ft-line {
-    flex: 1;
-    height: 1px;
-    background: #0D0D0D;
-}
-
-.ft-title {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #ff003c;
-}
-
-.ft-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    max-width: 820px;
-    margin: 0 auto 20px;
-}
-
-.ft-card {
-    background: #0e0e0e;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 14px;
-    padding: 24px;
-    transition: 0.25s;
-}
-
-
-.ft-card-top {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 20px;
-}
-
-.ft-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ft-sub {
-    font-size: 10px;
-    color: #555;
-    letter-spacing: 2px;
-}
-
-.ft-name {
-    font-size: 14px;
-    color: white;
-    font-weight: 600;
-}
-
-.ft-btn {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #ff003c, #cc0030);
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: 0.25s;
-}
-
 
 .site-footer{
     margin-top:0;
@@ -802,7 +716,7 @@ body{
 }
 
 .ft-title{
-    font-size:11px;
+    font-size:15px;
     letter-spacing:4px;
     color:#ff003c;
 }
@@ -811,19 +725,19 @@ body{
     display:grid;
     grid-template-columns:repeat(3,1fr);
 
-    gap:16px;
-
+    gap:60px;
+    
     max-width:820px;
     margin:0 auto 48px;
 }
 
 .ft-card{
     background:#161616;
-
+     width: 288px;
     border:1px solid #222;
     border-radius:14px;
-
-    padding:24px 30px 30px;
+    
+    padding:28px 24px;
     
 }
 
@@ -836,7 +750,7 @@ body{
 .ft-card-top{
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:18px;
 
     margin-bottom:20px;
 }
@@ -859,7 +773,7 @@ body{
 }
 
 .ft-name{
-    font-size:14px;
+    font-size:18px;
     color:white;
     font-weight:600;
 }
@@ -1019,7 +933,7 @@ justify-content: center;
     z-index:2;
 
     margin-top:70px;
-    padding-top:30px;
+    padding-top:20px;
 
     border-top:1px solid rgba(255,255,255,0.08);
 
@@ -1035,7 +949,7 @@ justify-content: center;
     color:#ff003c;
 
     font-size:15px;
-    font-weight:600;
+    font-weight:600;    
 
     text-decoration:none;
 
@@ -1049,11 +963,12 @@ justify-content: center;
 .footer-bottom-center{
     flex:1;
     text-align:center;
+    
 }
 
 .footer-bottom-center p{
     color:rgba(248, 246, 246, 0.28);
-
+    padding-bottom: 15px;
     font-size:14px;
     line-height:1.8;
 }
