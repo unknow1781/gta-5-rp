@@ -600,7 +600,7 @@ body{
     width:600px;
     height:600px;
 
-    background:rgba(255,0,70,0.15);
+    background:rgba(#0D0D0D);
 
     border-radius:50%;
 
@@ -613,14 +613,14 @@ body{
 }
 
 .faq-section {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background: #111;
+    padding: 0px 30px ;
+    background-color: #0D0D0D;
 }
 
 .faq-top {
     text-align: center;
     margin-bottom: 70px;
+    margin-top: 30px;
 }
 
 .faq-sub {
@@ -692,7 +692,7 @@ body{
     margin-top: 0;
     padding-top: 40px;
     padding-bottom: 10px;
-    background: #111;
+    background-color: #0D0D0D;
     border-top: none;
 }
 
@@ -706,7 +706,7 @@ body{
 .ft-line {
     flex: 1;
     height: 1px;
-    background: #2a2a2a;
+    background: #0D0D0D;
 }
 
 .ft-title {
@@ -731,11 +731,6 @@ body{
     transition: 0.25s;
 }
 
-.ft-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(255, 0, 60, 0.3);
-    box-shadow: 0 0 30px rgba(255, 0, 60, 0.07);
-}
 
 .ft-card-top {
     display: flex;
@@ -779,15 +774,12 @@ body{
     transition: 0.25s;
 }
 
-.ft-btn:hover {
-    box-shadow: 0 0 24px rgba(255, 0, 60, 0.35);
-    transform: translateY(-1px);
-}
+
 .site-footer{
     margin-top:0;
     padding-top:40px;
     padding-bottom: 10px;
-    background:#111;
+    background:#0D0D0D;
     border-top:none;
     
     
@@ -799,7 +791,7 @@ body{
     display:flex;
     align-items:center;
     gap:16px;
-
+     
     margin-bottom:48px;
 }
 
@@ -831,17 +823,14 @@ body{
     border:1px solid #222;
     border-radius:14px;
 
-    padding:24px;
+    padding:24px 30px 30px;
     
-    transition:0.25s;
 }
 
 .ft-card:hover{
-    transform:translateY(-3px);
 
-    border-color:rgba(255,0,70,0.35);
+    border-color:rgba(255, 255, 255, 0.35);
 
-    box-shadow:0 0 25px rgba(255,0,70,0.08);
 }
 
 .ft-card-top{
@@ -1153,6 +1142,7 @@ justify-content: center;
     }
 
     .faq-top h1{
+        padding-top: 20px;
         font-size:40px;
     }
 
